@@ -1,0 +1,37 @@
+############## Web Server Settings ##############
+spring.config.activate.on-profile=local
+# server.port=8081
+# server.servlet.context-path=/nodal
+
+############## SSL Configuration ##############
+server.ssl.enabled=false
+# server.ssl.key-store=file:C:/path/to/your/local-copy.pfx
+# server.ssl.key-store-password=YOUR_PFX_PASSWORD
+# server.ssl.key-store-type=PKCS12
+# server.ssl.key-alias=YOUR_ALIAS
+
+############## Api Documentation Settings ##############
+# Open Api Docs #
+springdoc.api-docs.enabled=true
+springdoc.cache.disabled=false
+springdoc.api-docs.path=/v3/api-docs
+# Swagger UI # 
+springdoc.swagger-ui.enabled=true
+springdoc.swagger-ui.path=/swagger-ui.html
+springdoc.swagger-ui.tryItOutEnabled=false
+
+############## Database connection Pool ##############
+# Connection pool settings (per database connection)
+# nodalconnect.pool.max-size=5
+# nodalconnect.pool.min-idle=1
+# nodalconnect.pool.connection-timeout-ms=5000
+# nodalconnect.pool.idle-timeout-ms=300000
+# nodalconnect.pool.max-lifetime-ms=600000
+
+############## Cargo Spectre Settings ##############
+# cargospectre.procedure-name=NODAL_CARGOSPECTRE_UPDATE_ITEM
+
+############## Logging Settings ##############
+logging.file.path=Logs/app
+logging.level.root=INFO
+
